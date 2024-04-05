@@ -1,6 +1,6 @@
 variable "gke_cluster_name" {
   type = string
-  default = "gke-cluster-dev"
+  default = "gke-cluster-prod"
 }
 
 variable "gke_region" {
@@ -29,7 +29,7 @@ variable "google_zone_dns_name" {
 
 variable "google_dns_record_name" {
   type = string
-  default = "*-dev"
+  default = "*"
 }
 
 variable "google_dns_record_type" {
@@ -44,7 +44,7 @@ variable "google_dns_record_ttl" {
 
 variable "artifact_registry_name" {
   type = string
-  default = "container-registry-gke-dev"
+  default = "container-registry-gke-prod"
 }
 
 variable "artifact_registry_location" {
@@ -59,7 +59,7 @@ variable "GOOGLE_CREDENTIALS" {
 
 variable "docker_registry_server" {
   type = string
-  default = "southamerica-east1-docker.pkg.dev"
+  default = "southamerica-east1-docker.pkg.prod"
 }
 
 variable "docker_registry_name" {
