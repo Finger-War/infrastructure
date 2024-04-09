@@ -29,7 +29,7 @@ variable "google_zone_dns_name" {
 
 variable "google_dns_record_name" {
   type = string
-  default = "*-dev"
+  default = "*.dev"
 }
 
 variable "google_dns_record_type" {
